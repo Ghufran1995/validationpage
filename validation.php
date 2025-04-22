@@ -43,7 +43,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     if(empty($errors)){
-        echo "<h3 style='color:green ;'>Form Submition Successfuly</h3>";
+        echo "<h3 style='color:green ;'>Form Submition Successfuly</h3>"
+            ."<h4>username: $username</h4>"
+		."<h4>email: $email</h4>"
+		."<h4>age: $age</h4>"
+		."<h4>password: $password</h4>"
+		."<h4>confirm_password: $confirm_password</h4>";
+exit;
     }
 }
 
